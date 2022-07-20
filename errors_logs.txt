@@ -1,0 +1,57 @@
+2_nftMarket_migration.js
+========================
+
+   Deploying 'NftMarket'
+   ---------------------
+   > transaction hash:    0xb287d82d587b5808d3c07651c8af6706b6c2cf353013b6eecae201d17932e0e9
+   > Blocks: 1            Seconds: 12
+   > contract address:    0xB34DFB50415673E4dA52a3b7003e7741c7f8CdEE
+   > block number:        12630289
+   > block timestamp:     1658317524
+   > account:             0x8EEb37ee23BDa1ab513C28B1E4D159E7CDce5C7f
+   > balance:             9.90940086
+   > gas used:            4233890 (0x409aa2)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0846778 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 12630290)
+   > confirmation number: 2 (block: 12630291)
+Error: Unhandled error. ({hain.
+  code: -32603,
+  message: 'connect ECONNREFUSED 18.233.72.79:443',
+  data: {
+    originalError: {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '18.233.72.79',
+      port: 443
+    }
+  }
+})
+    at new NodeError (node:internal/errors:372:5)
+    at Web3ProviderEngine.emit (node:events:516:17)
+    at /Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/web3-provider-engine/index.js:54:14
+    at afterRequest (/Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/web3-provider-engine/index.js:148:21)
+    at /Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/web3-provider-engine/index.js:174:21
+    at /Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/web3-provider-engine/index.js:232:9
+    at /Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/async/internal/once.js:12:16
+    at replenish (/Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/async/internal/eachOfLimit.js:61:25)
+    at /Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/async/internal/eachOfLimit.js:71:9
+    at eachLimit (/Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/async/eachLimit.js:43:36)
+    at /Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/async/internal/doLimit.js:9:16
+    at end (/Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/web3-provider-engine/index.js:211:5)
+    at Request._callback (/Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/web3-provider-engine/subproviders/rpc.js:36:21)
+    at self.callback (/Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:527:28)
+    at Request.onRequestError (/Users/antoniocimmino/Blockchain/nft-marketplace/node_modules/request/request.js:877:8)
+    at ClientRequest.emit (node:events:539:35)
+    at TLSSocket.socketErrorListener (node:_http_client:454:9)
+    at TLSSocket.emit (node:events:527:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
